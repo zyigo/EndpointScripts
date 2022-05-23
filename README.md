@@ -24,8 +24,6 @@
   <p align="center">
     A collection of ideas, thoughts and scripts for effective configuration of Intune for small business.
     <br />
-    <a href="https://alarp-solutions.github.io/EndpointScripts/"><strong>Explore the docs »</strong></a>
-    <br />
     <br />
     <a href="https://github.com/ALARP-Solutions/EndpointScripts/issues">Report Bug</a>
     ·
