@@ -1,8 +1,11 @@
-# Endpoint Scripts
-<div id="top"></div>
-
 <div align="center">
   <!-- PROJECT SHIELDS -->
+  
+  <a href="https://github.com/ALARP-Solutions/EndpointScripts">
+    <img src="logo.png" alt="Logo" width="80" height="80">
+  </a>
+
+  <h1 id="top">Endpoint Scripts</h1>
 
   [![Contributors][contributors-shield]][contributors-url]
   [![Forks][forks-shield]][forks-url]
@@ -10,29 +13,24 @@
   [![MIT License][license-shield]][license-url]
   [![Issues][issues-shield]][issues-url]
   <br />
-
-  <a href="https://github.com/ALARP-Solutions/EndpointScripts">
-    <img src="logo.png" alt="Logo" width="80" height="80">
-  </a>
-
-  <h2>Endpoint Scripts</h2>
-
-  ![size-shield]
   
-  A collection of ideas, thoughts and scripts for effective configuration of Microsoft Ednpoint managed devices.
-
-
-
-  <br />
+  As a small business, we needed a way to manage devices quickly, simply and effectively. To do so, EndpointScripts was established. It is a collection of ideas, thoughts and scripts for effective configuration of Microsoft Endpoint managed devices. 
+  
   <a href="https://github.com/ALARP-Solutions/EndpointScripts/issues">Report Bug</a>
   ·
   <a href="https://github.com/ALARP-Solutions/EndpointScripts/issues">Request Feature</a>
+  <br />
+  
+  ![size-shield] [![DevSkim](https://github.com/ALARP-Solutions/EndpointScripts/actions/workflows/devskim.yml/badge.svg)](https://github.com/ALARP-Solutions/EndpointScripts/actions/workflows/devskim.yml) [![PSScriptAnalyzer](https://github.com/ALARP-Solutions/EndpointScripts/actions/workflows/powershell.yml/badge.svg)](https://github.com/ALARP-Solutions/EndpointScripts/actions/workflows/powershell.yml)
+
   
 </div>
 
 ## Getting Started
 
 Instructions for use and any necessary prerequisities are listed within individual scripts and/or within each script set readme.
+
+Still having trouble or think better detail could be provided? Please [raise a new feature request](https://github.com/ALARP-Solutions/EndpointScripts/issues/new?assignees=&labels=documentation&template=feature_request.md&title=).
 
 ## Individual Scripts
 <div align="center">
@@ -54,7 +52,7 @@ None currently available.
 
 ## Licence
 
-Distributed under the MIT License. See [`LICENSE.txt`](https://github.com/ALARP-Solutions/EndpointScripts/blob/main/LICENSE.txt) for more information.
+Distributed under the MIT License. See [`LICENSE.md`](https://github.com/ALARP-Solutions/EndpointScripts/blob/main/LICENSE.md) for more information.
 
 ## Acknowledgments
 
