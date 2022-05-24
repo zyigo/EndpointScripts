@@ -18,10 +18,11 @@
   <h3>Endpoint Scripts</h3>
 
   ![size-shield]
-  ![lines-shield]
-  ![files-shield]
   
-  A collection of ideas, thoughts and scripts for effective configuration of Intune for small business.
+  A collection of ideas, thoughts and scripts for effective configuration of Microsoft Ednpoint managed devices.
+
+
+
   <br />
   <a href="https://github.com/ALARP-Solutions/EndpointScripts/issues">Report Bug</a>
   ·
@@ -29,61 +30,23 @@
   
 </div>
 
-<!-- <details open>
-  <summary><h4>Table of Contents</h4></summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-    </li>
-    <li>
-      <a href="#Individual-Scripts">Individual Scripts</a>
-    </li>
-    <li>
-      <a href="#Individual-Scripts">Individual Scripts</a>
-    </li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-</details> -->
-
-<!-- ABOUT THE PROJECT -->
-
-## About The Project
-
-  TBA
-
-<!-- <p align="right">(<a href="#top">back to top</a>)</p> -->
-
 ## Getting Started
 
 Instructions for use and any necessary prerequisities are listed within individual scripts and/or within each script set readme.
 
-<!-- <p align="right">(<a href="#top">back to top</a>)</p> -->
-
-<!-- Individual Scripts -->
-<!-- <details open>
-  <summary style="cursor:pointer"><h2>Individual Scripts</h2></summary> -->
 ## Individual Scripts
-<table>
-  <tr>
-    <th>Script</th>
-    <th>Description</th>
-  </tr>
-  <tr>
-    <td><a href="https://github.com/ALARP-Solutions/EndpointScripts/blob/master/CleanupBuiltinApps.ps1">CleanupBuiltinApps.ps1</a></td>
-    <td>Removes built-in windows app during device provisioning.</td>
-  </tr>
-  <tr>
-    <td><a href="![CleanupBuiltinApps-url]">CleanupBuiltinApps.ps1</a></td>
-    <td>Removes built-in windows app during device provisioning.</td>
-  </tr>
-</table>
+<div align="center">
 
-[CleanupBuiltinApps-url]: https://github.com/ALARP-Solutions/EndpointScripts/blob/master/CleanupBuiltinApps.ps1
+| :warning: **Many of these are likely still in development**: Use them at your own peril, and test before you deploy! |
+| --- |
+
+</div>
+
+| Script | Description |
+| --- | --- |
+|[CleanupBuiltinApps.ps1] | Removes built-in windows app during device provisioning. |
+
+[CleanupBuiltinApps.ps1]: https://github.com/ALARP-Solutions/EndpointScripts/blob/master/Individual%20Scripts/CleanupBuiltinApps.ps1
 
 ## Script Sets
 None currently available.
@@ -104,18 +67,18 @@ Don't forget to give the project a star! Thanks again!
 
 Distributed under the MIT License. See [`LICENSE.txt`](https://github.com/ALARP-Solutions/EndpointScripts/blob/main/LICENSE.txt) for more information.
 
-
-
 ## Acknowledgments
 
 - Project icon designed by [Freepik](https://www.flaticon.com/authors/freepik) from [Flaticon](https://www.flaticon.com/free-icons/programming)
 - <a href="https://github.com/ALARP-Solutions/EndpointScripts/blob/master/CleanupBuiltinApps.ps1">CleanupBuiltinApps.ps1</a> is a fork of a script originally authored by _Joymalya Basu Roy_ and _Wojciech Maciejewski_
-<p align="right">(<a href="#top">back to top</a>)</p>
+
+</br>
+<p align="center">(<a href="#top">back to top</a>)</p>
 
 [contributors-shield]: https://img.shields.io/github/contributors/ALARP-Solutions/EndpointScripts.svg?style=for-the-badge
 [contributors-url]: https://github.com/ALARP-Solutions/EndpointScripts/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/ALARP-Solutions/EndpointScripts.svg?style=for-the-badge
-[forks-url]: https://github.com/ALARP-Solutions/ExeDeploymentBuilder/network/members
+[forks-url]: https://github.com/ALARP-Solutions/EndpointScripts/network/members
 [stars-shield]: https://img.shields.io/github/stars/ALARP-Solutions/EndpointScripts.svg?style=for-the-badge
 [stars-url]: https://github.com/ALARP-Solutions/EndpointScripts/stargazers
 [issues-shield]: https://img.shields.io/github/issues/ALARP-Solutions/EndpointScripts.svg?style=for-the-badge
@@ -125,7 +88,3 @@ Distributed under the MIT License. See [`LICENSE.txt`](https://github.com/ALARP-
 [files-shield]: https://img.shields.io/github/directory-file-count/ALARP-Solutions/EndpointScripts
 [lines-shield]: https://img.shields.io/tokei/lines/github/ALARP-Solutions/EndpointScripts
 [size-shield]: https://img.shields.io/github/repo-size/alarp-solutions/EndpointScripts
-
-<!-- [linkedin-url]: https://linkedin.com/in/linkedin_username -->
-
-[product-screenshot]: images/screenshot.png
