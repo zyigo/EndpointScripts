@@ -4,7 +4,7 @@
 .DESCRIPTION
   <The script removes built-in windows app during device provisioning>
 .OUTPUTS
-  <Log file stored in C:\ProgramData\Microsoft\IntuneManagementExtension\Logs\win32-WindowsCleanup.log>
+  <Log file stored in C:\ProgramData\Microsoft\IntuneManagementExtension\Logs\win32-CleanupBuiltinApps.log>
 .NOTES
   Version:        1.2
   Author:         Joymalya Basu Roy, Wojciech Maciejewski
@@ -27,7 +27,7 @@ if ("$env:PROCESSOR_ARCHITEW6432" -ne "ARM64")
     
 # Logging Preparation
 
-$AppName = "WindowsCleanup"
+$AppName = "CleanupBuiltinApps"
 $Log_FileName = "win32-$AppName.log"
 $Log_Path = "C:\ProgramData\Microsoft\IntuneManagementExtension\Logs\"
 $TestPath = "$Log_Path\$Log_Filename"
@@ -111,5 +111,5 @@ foreach ($app in $builtinappstoremove) {
     }
 }
 
-Write-Log "END - All specified built-in apps were removed succesfully"
+Write-Log "END - All specified built-in apps were removed successfully"
 Write-Log $BreakingLine
