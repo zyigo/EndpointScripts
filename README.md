@@ -68,21 +68,22 @@ Instructions for use and any necessary prerequisities are listed within individu
 <!-- <details open>
   <summary style="cursor:pointer"><h2>Individual Scripts</h2></summary> -->
 ## Individual Scripts
-
-| Script | Description |
-| --- | --- |
-| <a href="https://github.com/ALARP-Solutions/EndpointScripts/blob/master/CleanupBuiltinApps.ps1">CleanupBuiltinApps.ps1</a> | List all new or modified files |
-
 <table>
   <tr>
-    <th style="width:10;">Script</th>
-    <th style="width:90;">Description</th>
+    <th>Script</th>
+    <th>Description</th>
   </tr>
   <tr>
     <td><a href="https://github.com/ALARP-Solutions/EndpointScripts/blob/master/CleanupBuiltinApps.ps1">CleanupBuiltinApps.ps1</a></td>
     <td>Removes built-in windows app during device provisioning.</td>
   </tr>
+  <tr>
+    <td><a href="![CleanupBuiltinApps-url]">CleanupBuiltinApps.ps1</a></td>
+    <td>Removes built-in windows app during device provisioning.</td>
+  </tr>
 </table>
+
+[CleanupBuiltinApps-url]: https://github.com/ALARP-Solutions/EndpointScripts/blob/master/CleanupBuiltinApps.ps1
 
 ## Script Sets
 None currently available.
