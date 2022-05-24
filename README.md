@@ -37,7 +37,7 @@ Instructions for use and any necessary prerequisities are listed within individu
 ## Individual Scripts
 <div align="center">
 
-:warning: **Many of these are likely still in development**: Use them at your own peril, and test before you deploy! :warning: 
+[!warning-shield]
 
 </div>
 
@@ -75,7 +75,7 @@ Distributed under the MIT License. See [`LICENSE.txt`](https://github.com/ALARP-
 
 </br>
 <p align="center">(<a href="#top">back to top</a>)</p>
-
+[warning-shield]: https://img.shields.io/badge/-%E2%9A%A0%EF%B8%8F%20Many%20of%20these%20are%20likely%20still%20in%20development.%20Use%20them%20at%20your%20own%20peril%2C%20and%20test%20before%20you%20deploy!%20%E2%9A%A0%EF%B8%8F-red
 [contributors-shield]: https://img.shields.io/github/contributors/ALARP-Solutions/EndpointScripts.svg?style=for-the-badge
 [contributors-url]: https://github.com/ALARP-Solutions/EndpointScripts/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/ALARP-Solutions/EndpointScripts.svg?style=for-the-badge
