@@ -19,9 +19,16 @@
   [Report Bug](https://github.com/ALARP-Solutions/EndpointScripts/issues/new?assignees=&labels=bug&template=bug_report.md&title=)
   ·
   [Request Feature](https://github.com/ALARP-Solutions/EndpointScripts/issues/new?assignees=&labels=enhancement&template=feature_request.md&title=)
-  <br />
   
-  ![size-shield] [![DevSkim](https://github.com/ALARP-Solutions/EndpointScripts/actions/workflows/devskim.yml/badge.svg)](https://github.com/ALARP-Solutions/EndpointScripts/actions/workflows/devskim.yml) [![PSScriptAnalyzer](https://github.com/ALARP-Solutions/EndpointScripts/actions/workflows/powershell.yml/badge.svg)](https://github.com/ALARP-Solutions/EndpointScripts/actions/workflows/powershell.yml)
+  [![GitHub issues by-label](https://img.shields.io/github/issues/ALARP-Solutions/EndpointScripts/bug?color=red&label=Bugs&style=flat-square)](https://github.com/ALARP-Solutions/EndpointScripts/labels/bug)
+  [![GitHub issues by-label](https://img.shields.io/github/issues/ALARP-Solutions/EndpointScripts/documentation?color=blue&label=Documentation&style=flat-square)](https://github.com/ALARP-Solutions/EndpointScripts/labels/documentation)
+  [![GitHub issues by-label](https://img.shields.io/github/issues/ALARP-Solutions/EndpointScripts/enhancement?color=aqua&label=Enhancements&style=flat-square)](https://github.com/ALARP-Solutions/EndpointScripts/labels/enhancement)
+  [![GitHub issues by-label](https://img.shields.io/github/issues/ALARP-Solutions/EndpointScripts/good%2520first%2520issue?color=purple&label=Good%20First%20Issue&style=flat-square)](https://github.com/ALARP-Solutions/EndpointScripts/labels/good%20first%20issue)
+  [![GitHub issues by-label](https://img.shields.io/github/issues/ALARP-Solutions/EndpointScripts/Help%20Wanted?color=forestgreen&label=Help%20Wanted&style=flat-square)](https://github.com/ALARP-Solutions/EndpointScripts/labels/help%20wanted)
+  [![GitHub issues by-label](https://img.shields.io/github/issues/ALARP-Solutions/EndpointScripts/security?color=black&label=Security&style=flat-square)](https://github.com/ALARP-Solutions/EndpointScripts/labels/security)
+
+  
+<!--   ![size-shield] [![DevSkim](https://github.com/ALARP-Solutions/EndpointScripts/actions/workflows/devskim.yml/badge.svg)](https://github.com/ALARP-Solutions/EndpointScripts/actions/workflows/devskim.yml) [![PSScriptAnalyzer](https://github.com/ALARP-Solutions/EndpointScripts/actions/workflows/powershell.yml/badge.svg)](https://github.com/ALARP-Solutions/EndpointScripts/actions/workflows/powershell.yml) -->
 
   
 </div>
