@@ -69,6 +69,10 @@ Instructions for use and any necessary prerequisities are listed within individu
   <summary style="cursor:pointer"><h2>Individual Scripts</h2></summary> -->
 ## Individual Scripts
 
+| Script | Description |
+| --- | --- |
+| <a href="https://github.com/ALARP-Solutions/EndpointScripts/blob/master/CleanupBuiltinApps.ps1">CleanupBuiltinApps.ps1</a> | List all new or modified files |
+
 <table>
   <tr>
     <th style="width:10;">Script</th>
