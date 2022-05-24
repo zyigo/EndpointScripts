@@ -16,9 +16,9 @@
   
   As a small business, we needed a way to manage devices quickly, simply and effectively. To do so, EndpointScripts was established. It is a collection of ideas, thoughts and scripts for effective configuration of Microsoft Endpoint managed devices. 
   
-  <a href="https://github.com/ALARP-Solutions/EndpointScripts/issues">Report Bug</a>
+  [Report Bug](https://github.com/ALARP-Solutions/EndpointScripts/issues/new?assignees=&labels=bug&template=bug_report.md&title=)
   ·
-  <a href="https://github.com/ALARP-Solutions/EndpointScripts/issues">Request Feature</a>
+  [Request Feature](https://github.com/ALARP-Solutions/EndpointScripts/issues/new?assignees=&labels=enhancement&template=feature_request.md&title=)
   <br />
   
   ![size-shield] [![DevSkim](https://github.com/ALARP-Solutions/EndpointScripts/actions/workflows/devskim.yml/badge.svg)](https://github.com/ALARP-Solutions/EndpointScripts/actions/workflows/devskim.yml) [![PSScriptAnalyzer](https://github.com/ALARP-Solutions/EndpointScripts/actions/workflows/powershell.yml/badge.svg)](https://github.com/ALARP-Solutions/EndpointScripts/actions/workflows/powershell.yml)
