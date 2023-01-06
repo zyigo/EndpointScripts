@@ -1,4 +1,4 @@
-# Misc Security Configurations
+# Intune Policy Gap-Filler
 Configures registry elements not currently available through intune profiles, that are also considered required by Microsoft Defender.
  
 ## Pre-Requisites

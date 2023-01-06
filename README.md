@@ -1,6 +1,4 @@
-<div align="center">
-  <!-- PROJECT SHIELDS -->
-  
+<div align="center">  
   <a href="https://github.com/ALARP-Solutions/EndpointScripts">
     <img src="logo.png" alt="Logo" width="80" height="80">
   </a>
@@ -31,37 +29,35 @@
 </div>
 
 ## Getting Started
-
 Instructions for use and any necessary prerequisities are listed within each script and/or within each script set readme. If the instructions are insufficient, or you are still having trouble, please [raise a new feature request](https://github.com/ALARP-Solutions/EndpointScripts/issues/new?assignees=&labels=documentation&template=feature_request.md&title=).
 
-## Individual Scripts
-
+## [Stand-Alone Scripts](https://github.com/ALARP-Solutions/EndpointScripts/tree/main/Scripts/Stand-Alone)
 | Type | Scripts | Description |
 | --- | --- | --- |
-| Provisioning | [CleanupBuiltinApps.ps1] | Removes built-in windows app during device provisioning. |
+| Provisioning | [Remove Built-In Apps] | Removes unnecessary built-in windows app during device provisioning. |
 
-[CleanupBuiltinApps.ps1]: https://github.com/ALARP-Solutions/EndpointScripts/blob/master/Scripts/Provisioning/CleanupBuiltinApps.ps1
+[Remove Built-In Apps]: https://github.com/ALARP-Solutions/EndpointScripts/tree/main/Scripts/Stand-Alone/Provisioning/Remove%20Built-In%20Apps.ps1
 
-## Proactive Remediation Sets
-
+## [Proactive Remediation Sets](https://github.com/ALARP-Solutions/EndpointScripts/tree/main/Scripts/Proactive%20Remediation%20Sets/Security)
 | Type | Subtype | Scripts | Description |
 | --- | --- | --- | --- |
-| Security | System | [Enable Credential Guard] | Enables Credential Guard on non-Enterprise PCs (i.e. Business Premium licenced) |
-| Security | System | [Misc Security Configurations] | Sets various keys required by Microsoft Defender, that aren't available via Intune configuration profiles. |
+| Security | Applications | [Adobe Acrobat Reader] | Configures security settings for Adobe Acrobat Reader. |
+| Security | System | [Enable Credential Guard] | Enables Credential Guard on non-Enterprise PCs (i.e. Business Premium licenced). |
+| Security | System | [Intune Policy Gap-Filler] | Sets various keys required by Microsoft Defender, that aren't available via Intune configuration profiles. |
 
-[Enable Credential Guard]:https://github.com/ALARP-Solutions/EndpointScripts/blob/master/Scripts/Proactive%20Remediation%20Sets/Security/System/Enable%20Credential%20Guard
-[Misc Security Configurations]:https://github.com/ALARP-Solutions/EndpointScripts/blob/master/Scripts/Proactive%20Remediation%20Sets/Security/System/Misc%20Security%20Configurations
+[Adobe Acrobat Reader]: https://github.com/ALARP-Solutions/EndpointScripts/tree/main/Scripts/Proactive%20Remediation%20Sets/Security/Applications/Adobe%20Acrobat%20Reader
+[Enable Credential Guard]:https://github.com/ALARP-Solutions/EndpointScripts/tree/main/Scripts/Proactive%20Remediation%20Sets/Security/System/Enable%20Credential%20Guard
+[Intune Policy Gap-Filler]:https://github.com/ALARP-Solutions/EndpointScripts/tree/main/Scripts/Proactive%20Remediation%20Sets/Security/System/Intune%20Policy%20Gap-Filler
 
 ## Licence
-
 Distributed under the MIT License. See [`LICENSE.md`](https://github.com/ALARP-Solutions/EndpointScripts/blob/main/LICENSE.md) for more information.
 
 ## Acknowledgments
-
 - Project icon designed by [Freepik](https://www.flaticon.com/authors/freepik) from [Flaticon](https://www.flaticon.com/free-icons/programming)
 - <a href="https://github.com/ALARP-Solutions/EndpointScripts/blob/master/CleanupBuiltinApps.ps1">CleanupBuiltinApps.ps1</a> is a fork of a script originally authored by _Joymalya Basu Roy_ and _Wojciech Maciejewski_
 
 </br>
+
 <p align="center">(<a href="#top">back to top</a>)</p>
 
 [warning-shield]: https://img.shields.io/badge/-%E2%9A%A0%EF%B8%8F%20Many%20of%20these%20are%20likely%20still%20in%20development.%20Use%20them%20at%20your%20own%20peril%2C%20and%20test%20before%20you%20deploy!%20%E2%9A%A0%EF%B8%8F-red

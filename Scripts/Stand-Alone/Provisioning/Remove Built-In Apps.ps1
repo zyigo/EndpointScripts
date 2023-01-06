@@ -1,6 +1,6 @@
 <#
 .SYNOPSIS
-  <ScriptName: CleanupBuiltinApps>
+  <ScriptName: Remove Built-In Apps>
 .DESCRIPTION
   <The script removes built-in windows app during device provisioning>
 .OUTPUTS
