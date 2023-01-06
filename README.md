@@ -46,11 +46,11 @@ Instructions for use and any necessary prerequisities are listed within each scr
 
 | Type | Sub-Type | Scripts | Description |
 | --- | --- | --- | --- |
-| Security | System-Level | [Enable Credential Guard] | Enables Credential Guard on non-Enterprise PCs (i.e. Business Premium licenced) |
-| Security | System-Level | [Misc Security Configurations] | Sets various keys required by Microsoft Defender, that aren't available via Intune configuration profiles. |
+| Security | System | [Enable Credential Guard] | Enables Credential Guard on non-Enterprise PCs (i.e. Business Premium licenced) |
+| Security | System | [Misc Security Configurations] | Sets various keys required by Microsoft Defender, that aren't available via Intune configuration profiles. |
 
-[Enable Credential Guard]:https://github.com/ALARP-Solutions/EndpointScripts/blob/master/Scripts/Proactive%20Remediation%20Sets/Security/System-Level/Enable%20Credential%20Guard
-[Misc Security Configurations]:https://github.com/ALARP-Solutions/EndpointScripts/blob/master/Scripts/Proactive%20Remediation%20Sets/Security/System-Level/Misc%20Security%20Configurations
+[Enable Credential Guard]:https://github.com/ALARP-Solutions/EndpointScripts/blob/master/Scripts/Proactive%20Remediation%20Sets/Security/System/Enable%20Credential%20Guard
+[Misc Security Configurations]:https://github.com/ALARP-Solutions/EndpointScripts/blob/master/Scripts/Proactive%20Remediation%20Sets/Security/System/Misc%20Security%20Configurations
 
 ## Licence
 
