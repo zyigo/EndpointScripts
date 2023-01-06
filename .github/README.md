@@ -34,18 +34,18 @@ Instructions for use and any necessary prerequisities are listed within each scr
 ## [Stand-Alone Scripts](https://github.com/ALARP-Solutions/EndpointScripts/tree/main/Stand-Alone%20Scripts)
 | Type | Scripts | Description |
 | --- | --- | --- |
-| Provisioning | [Remove Built-In Apps] | Removes unnecessary built-in windows app during device provisioning. |
-
-[Remove Built-In Apps]: https://github.com/ALARP-Solutions/EndpointScripts/tree/main/Stand-Alone%20Scripts/Provisioning/Remove%20Built-In%20Apps.ps1
+| Provisioning | [Remove Built-In Apps] | Removes unnecessary built-in windows app during device provisioning. | [Remove Built-In Apps]: https://github.com/ALARP-Solutions/EndpointScripts/tree/main/Stand-Alone%20Scripts/Provisioning/Remove%20Built-In%20Apps.ps1
 
 ## [Proactive Remediation Sets](https://github.com/ALARP-Solutions/EndpointScripts/tree/main/Proactive%20Remediation%20Script%20Sets/Security)
 | Type | Scripts | Description |
 | --- | --- | --- |
 | Security/Applications | [Adobe Acrobat Reader] | Configures security settings for Adobe Acrobat Reader. |
+| Security/Applications | [Microsoft Office C2R svc] | Remediates "Click to Run Service" to active if Office 16 installed. |
 | Security/System | [Enable Credential Guard] | Enables Credential Guard on non-Enterprise PCs (i.e. Business Premium licenced). |
 | Security/System | [Intune Policy Gap-Filler] | Sets various keys required by Microsoft Defender, that aren't available via Intune configuration profiles. |
 
 [Adobe Acrobat Reader]: https://github.com/ALARP-Solutions/EndpointScripts/tree/main/Proactive%20Remediation%20Script%20Sets/Security/Applications/Adobe%20Acrobat%20Reader
+[Microsoft Office - C2R svc]: https://github.com/ALARP-Solutions/EndpointScripts/tree/main/Proactive%20Remediation%20Script%20Sets/Security/Applications/Microsoft%20Office%20-%20C2R%20svc
 [Enable Credential Guard]:https://github.com/ALARP-Solutions/EndpointScripts/tree/main/Proactive%20Remediation%20Script%20Sets/Security/System/Enable%20Credential%20Guard
 [Intune Policy Gap-Filler]:https://github.com/ALARP-Solutions/EndpointScripts/tree/main/Proactive%20Remediation%20Script%20Sets/Security/System/Intune%20Policy%20Gap-Filler
 
