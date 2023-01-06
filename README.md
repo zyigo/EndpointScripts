@@ -12,9 +12,10 @@
   [![Stargazers][stars-shield]][stars-url]
   [![MIT License][license-shield]][license-url]
   [![Issues][issues-shield]][issues-url]
+  
   <br />
   
-  As a small business, we needed a way to manage devices quickly, simply and effectively. To do so, EndpointScripts was established. It is a collection of ideas, thoughts and scripts for effective configuration of Microsoft Endpoint managed devices. 
+  As a small business, we needed a way to manage devices quickly, simply and effectively. To do so, [ALARP-Solutions/EndpointScripts](https://github.com/ALARP-Solutions/EndpointScripts) was established. It is a collection of ideas, thoughts and scripts for effective configuration of Microsoft Endpoint Managed and Intune devices. 
   
   [Report Bug](https://github.com/ALARP-Solutions/EndpointScripts/issues/new?assignees=&labels=bug&template=bug_report.md&title=)
   ·
@@ -26,36 +27,28 @@
   [![GitHub issues by-label](https://img.shields.io/github/issues/ALARP-Solutions/EndpointScripts/good%2520first%2520issue?color=purple&label=Good%20First%20Issue&style=flat-square)](https://github.com/ALARP-Solutions/EndpointScripts/labels/good%20first%20issue)
   [![GitHub issues by-label](https://img.shields.io/github/issues/ALARP-Solutions/EndpointScripts/Help%20Wanted?color=forestgreen&label=Help%20Wanted&style=flat-square)](https://github.com/ALARP-Solutions/EndpointScripts/labels/help%20wanted)
   [![GitHub issues by-label](https://img.shields.io/github/issues/ALARP-Solutions/EndpointScripts/security?color=black&label=Security&style=flat-square)](https://github.com/ALARP-Solutions/EndpointScripts/labels/security)
-
-  
-<!--   ![size-shield] [![DevSkim](https://github.com/ALARP-Solutions/EndpointScripts/actions/workflows/devskim.yml/badge.svg)](https://github.com/ALARP-Solutions/EndpointScripts/actions/workflows/devskim.yml) [![PSScriptAnalyzer](https://github.com/ALARP-Solutions/EndpointScripts/actions/workflows/powershell.yml/badge.svg)](https://github.com/ALARP-Solutions/EndpointScripts/actions/workflows/powershell.yml) -->
-
   
 </div>
 
 ## Getting Started
 
-Instructions for use and any necessary prerequisities are listed within each script and/or within each script set readme.
-
-Still having trouble or think better detail could be provided? Please [raise a new feature request](https://github.com/ALARP-Solutions/EndpointScripts/issues/new?assignees=&labels=documentation&template=feature_request.md&title=).
+Instructions for use and any necessary prerequisities are listed within each script and/or within each script set readme. If the instructions are insufficient, or you are still having trouble, please [raise a new feature request](https://github.com/ALARP-Solutions/EndpointScripts/issues/new?assignees=&labels=documentation&template=feature_request.md&title=).
 
 ## Individual Scripts
-<div align="center">
 
-![warning-shield]
-
-</div>
-
-| Scripts | Description |
-| --- | --- |
-|[CleanupBuiltinApps.ps1] | Removes built-in windows app during device provisioning. |
-
+| Type | Scripts | Description |
+| --- | --- | --- |
+| Provisioning | [CleanupBuiltinApps.ps1] | Removes built-in windows app during device provisioning. |
 
 [CleanupBuiltinApps.ps1]: https://github.com/ALARP-Solutions/EndpointScripts/blob/master/Scripts/Provisioning/CleanupBuiltinApps.ps1
-[CleanupBuiltinApps.ps1]: https://github.com/ALARP-Solutions/EndpointScripts/blob/master/Scripts/Provisioning/CleanupBuiltinApps.ps1
 
-## Script Sets
-None currently available.
+## Proactive Remediation Sets
+
+| Type | Sub-Type | Scripts | Description |
+| --- | --- | --- | --- |
+| Security | System-Level | [Enable Credential Guard] | Removes built-in windows app during device provisioning. |
+
+[Enable Credential Guard]:https://github.com/ALARP-Solutions/EndpointScripts/blob/master/Scripts/Proactive%20Remediation%20Sets/Security/System-Level/Enable%20Credential%20Guard
 
 ## Licence
 
