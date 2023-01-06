@@ -44,7 +44,7 @@ Instructions for use and any necessary prerequisities are listed within each scr
 
 ## Proactive Remediation Sets
 
-| Type | Sub-Type | Scripts | Description |
+| Type | Subtype | Scripts | Description |
 | --- | --- | --- | --- |
 | Security | System | [Enable Credential Guard] | Enables Credential Guard on non-Enterprise PCs (i.e. Business Premium licenced) |
 | Security | System | [Misc Security Configurations] | Sets various keys required by Microsoft Defender, that aren't available via Intune configuration profiles. |
