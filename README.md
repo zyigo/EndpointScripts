@@ -35,7 +35,7 @@
 
 ## Getting Started
 
-Instructions for use and any necessary prerequisities are listed within individual scripts and/or within each script set readme.
+Instructions for use and any necessary prerequisities are listed within each script and/or within each script set readme.
 
 Still having trouble or think better detail could be provided? Please [raise a new feature request](https://github.com/ALARP-Solutions/EndpointScripts/issues/new?assignees=&labels=documentation&template=feature_request.md&title=).
 
@@ -46,13 +46,13 @@ Still having trouble or think better detail could be provided? Please [raise a n
 
 </div>
 
-| Script | Description |
+| Scripts | Description |
 | --- | --- |
 |[CleanupBuiltinApps.ps1] | Removes built-in windows app during device provisioning. |
-| [ConfigureEpsonIProjection.ps1] | Configures appropriate, and desired settings for an already installed instance of Epson's iProjection App. |
 
-[CleanupBuiltinApps.ps1]: https://github.com/ALARP-Solutions/EndpointScripts/blob/master/Individual%20Scripts/CleanupBuiltinApps.ps1
-[ConfigureEpsonIProjection.ps1]: https://github.com/ALARP-Solutions/EndpointScripts/blob/master/Individual%20Scripts/ConfigureEpsonIProjection.ps1
+
+[CleanupBuiltinApps.ps1]: https://github.com/ALARP-Solutions/EndpointScripts/blob/master/Scripts/Provisioning/CleanupBuiltinApps.ps1
+[CleanupBuiltinApps.ps1]: https://github.com/ALARP-Solutions/EndpointScripts/blob/master/Scripts/Provisioning/CleanupBuiltinApps.ps1
 
 ## Script Sets
 None currently available.
