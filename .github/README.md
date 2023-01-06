@@ -1,6 +1,6 @@
 <div align="center">  
   <a href="https://github.com/ALARP-Solutions/EndpointScripts">
-    <img src="https://github.com/ALARP-Solutions/EndpointScripts/logo.png" alt="Logo" width="80" height="80">
+    <img src="logo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h1 id="top">Endpoint Scripts</h1>
