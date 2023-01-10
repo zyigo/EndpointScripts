@@ -34,18 +34,22 @@ Instructions for use and any necessary prerequisities are listed within each scr
 ## [Stand-Alone Scripts](https://github.com/ALARP-Solutions/EndpointScripts/tree/main/Stand-Alone%20Scripts)
 | Type | Scripts | Description |
 | --- | --- | --- |
-| Provisioning | [Remove Built-In Apps] | Removes unnecessary built-in windows app during device provisioning. |
+| [Provisioning] | [Remove Built-In Apps] | Removes unnecessary built-in windows app during device provisioning. |
 
+[Provisioning]: https://github.com/ALARP-Solutions/EndpointScripts/tree/main/Stand-Alone%20Scripts/Provisioning
 [Remove Built-In Apps]: https://github.com/ALARP-Solutions/EndpointScripts/tree/main/Stand-Alone%20Scripts/Provisioning/Remove%20Built-In%20Apps.ps1
 
 ## [Proactive Remediation Sets](https://github.com/ALARP-Solutions/EndpointScripts/tree/main/Proactive%20Remediation%20Script%20Sets/Security)
 | Type | Scripts | Description |
 | --- | --- | --- |
-| Security/Applications | [Adobe Acrobat Reader] | Configures security settings for Adobe Acrobat Reader. |
-| Security/System | [Enable Credential Guard] | Enables Credential Guard on non-Enterprise PCs (i.e. Business Premium licenced). |
-| Security/System | [Fix Unquoted Service Path Issues] | Remediates service paths in the registry that are not secured with qoutation marks. |
-| Security/System | [Intune Policy Gap-Filler] | Sets various keys required by Microsoft Defender, that aren't available via Intune configuration profiles. |
+| [Security/Applications] | [Adobe Acrobat Reader] | Configures security settings for Adobe Acrobat Reader. |
+| [Security/System] | [Enable Credential Guard] | Enables Credential Guard on non-Enterprise PCs (i.e. Business Premium licenced). |
+| [Security/System] | [Fix Unquoted Service Path Issues] | Remediates service paths in the registry that are not secured with qoutation marks. |
+| [Security/System] | [Intune Policy Gap-Filler] | Sets various keys required by Microsoft Defender, that aren't available via Intune configuration profiles. |
 
+
+[Security/Applications]: https://github.com/ALARP-Solutions/EndpointScripts/tree/main/Proactive%20Remediation%20Script%20Sets/Security/Applications
+[Security/System]: https://github.com/ALARP-Solutions/EndpointScripts/tree/main/Proactive%20Remediation%20Script%20Sets/Security/System
 [Adobe Acrobat Reader]: https://github.com/ALARP-Solutions/EndpointScripts/tree/main/Proactive%20Remediation%20Script%20Sets/Security/Applications/Adobe%20Acrobat%20Reader
 [Fix Unquoted Service Path Issues]: https://github.com/ALARP-Solutions/EndpointScripts/tree/main/Proactive%20Remediation%20Script%20Sets/Security/System/Fix%20Unquoted%20Service%20Path%20Issues
 [Enable Credential Guard]:https://github.com/ALARP-Solutions/EndpointScripts/tree/main/Proactive%20Remediation%20Script%20Sets/Security/System/Enable%20Credential%20Guard
