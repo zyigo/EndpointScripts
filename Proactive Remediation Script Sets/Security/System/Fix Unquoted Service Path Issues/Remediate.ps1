@@ -1,21 +1,101 @@
-# Developed IAW https://www.anoopcnair.com/4-methods-to-enable-credential-guard-on-windows/
+# Get all services
+$FixParameters = @()
+$FixParameters += @{"Path" = "HKLM:\SYSTEM\CurrentControlSet\Services\" ; "ParamName" = "ImagePath" }
+$FixParameters += @{"Path" = "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\" ; "ParamName" = "UninstallString" }
 
-
-
-# Configure Data
-$data = @(
-    "HKLM:\\SYSTEM\CurrentControlSet\Control\DeviceGuard",  "EnableVirtualizationBasedSecurity",    "DWord",    "1", # 1 = Enabled, 0 = Disabled
-    "HKLM:\\SYSTEM\CurrentControlSet\Control\DeviceGuard",  "RequirePlatformSecurityFeatures",      "DWord",    "1", # 1 = Secure Boot, 3 = Secure Boot + DMA Protection, 0 = OFF
-    "HKLM:\\SYSTEM\CurrentControlSet\Control\Lsa",          "LsaCfgFlags",                          "DWord",    "1" # 0 = Disabled, 1 = CG with EUFI Lock, 2 = CG without UEFI Lock
-)
+# If OS x64 - adding paths for x86 programs
+If (Test-Path "$($env:SystemDrive)\Program Files (x86)\") {
+    $FixParameters += @{"Path" = "HKLM:\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\" ; "ParamName" = "UninstallString" }
+}
 
 try {
-    for ($i = 0; $i -lt $data.Length; $i = $i + 4) {
-        IF(!(Test-Path $data[$i]))
-        {
-            New-Item -Path $data[$i] -Force | Out-Null
+    $PTElements = @()
+    ForEach ($FixParameter in $FixParameters) {
+        Get-ChildItem $FixParameter.Path -ErrorAction SilentlyContinue | ForEach-Object {
+            $SpCharREGEX = '([\[\]])'
+            $RegistryPath = $_.name -Replace 'HKEY_LOCAL_MACHINE', 'HKLM:' -replace $SpCharREGEX, '`$1'
+            $OriginalPath = (Get-ItemProperty "$RegistryPath")
+            $ImagePath = $OriginalPath.$($FixParameter.ParamName)
+            If ($FixEnv) {
+                If ($($OriginalPath.$($FixParameter.ParamName)) -match '%(?''envVar''[^%]+)%') {
+                    $EnvVar = $Matches['envVar']
+                    $FullVar = (Get-ChildItem env: | Where-Object { $_.Name -eq $EnvVar }).value
+                    $ImagePath = $OriginalPath.$($FixParameter.ParamName) -replace "%$EnvVar%", $FullVar
+                    Clear-Variable Matches
+                }
+            }
+
+            # Get all services with vulnerability
+            If (($ImagePath -like "* *") -and ($ImagePath -notLike '"*"*') -and ($ImagePath -like '*.exe*')) {
+                # Skip MsiExec.exe in uninstall strings
+                If ((($FixParameter.ParamName -eq 'UninstallString') -and ($ImagePath -NotMatch 'MsiExec(\.exe)?') -and ($ImagePath -Match '^((\w\:)|(%[-\w_()]+%))\\')) -or ($FixParameter.ParamName -eq 'ImagePath')) {
+                    $NewPath = ($ImagePath -split ".exe ")[0]
+                    $key = ($ImagePath -split ".exe ")[1]
+                    $trigger = ($ImagePath -split ".exe ")[2]
+                    $NewValue = ''
+                    # Get service with vulnerability with key in ImagePath
+                    If (-not ($trigger | Measure-Object).count -ge 1) {
+                        If (($NewPath -like "* *") -and ($NewPath -notLike "*.exe")) {
+                            $NewValue = "`"$NewPath.exe`" $key"
+                        } # End If
+                        # Get service with vulnerability with out key in ImagePath
+                        ElseIf (($NewPath -like "* *") -and ($NewPath -like "*.exe")) {
+                            $NewValue = "`"$NewPath`""
+                        }
+                        If ((-not ([string]::IsNullOrEmpty($NewValue))) -and ($NewPath -like "* *")) {
+                            try {
+                                $soft_service = $(if ($FixParameter.ParamName -Eq 'ImagePath') { 'Service' }Else { 'Software' })
+                                $OriginalPSPathOptimized = $OriginalPath.PSPath -replace $SpCharREGEX, '`$1'
+                                Write-Debug "$(get-date -format u)  :  Old Value : $soft_service : '$($OriginalPath.PSChildName)' - $($OriginalPath.$($FixParameter.ParamName))"
+                                Write-Debug "$(get-date -format u)  :  Expected  : $soft_service : '$($OriginalPath.PSChildName)' - $NewValue"
+                                if ($Passthru) {
+                                    $PTElements += '' | Select-Object `
+                                    @{n = 'Name'; e = { $OriginalPath.PSChildName } }, `
+                                    @{n = 'Type'; e = { $soft_service } }, `
+                                    @{n = 'ParamName'; e = { $FixParameter.ParamName } }, `
+                                    @{n = 'Path'; e = { $OriginalPSPathOptimized } }, `
+                                    @{n = 'OriginalValue'; e = { $OriginalPath.$($FixParameter.ParamName) } }, `
+                                    @{n = 'ExpectedValue'; e = { $NewValue } }
+                                }
+                                If ($Backup) {
+                                    $BcpFileName = "$BackupFolder\$soft_service`_$($OriginalPath.PSChildName)`_$(get-date -uFormat "%Y-%m-%d_%H%M%S").reg"
+                                    $BcpTmpFileName = "$BackupFolder\$soft_service`_$($OriginalPath.PSChildName)`_$(get-date -uFormat "%Y-%m-%d_%H%M%S").tmp"
+                                    $BcpRegistryPath = $RegistryPath -replace '\:'
+                                    Write-Output "$(get-date -format u)  :  Creating registry backup : $BcpFileName"
+                                    $ExportResult = REG EXPORT $BcpRegistryPath $BcpTmpFileName | Out-String
+                                    Get-Content $BcpTmpFileName | Out-File $BcpFileName -Append
+                                    Remove-Item $BcpTmpFileName -Force -ErrorAction "SilentlyContinue"
+                                    Write-Debug "$(get-date -format u)  :  Backup Result : $($ExportResult -split '\r\n' | Where-Object {$_ -NotMatch '^$'})"
+                                }
+                                $WhatIf = $false
+                                If (! $WhatIf) {
+                                    Set-ItemProperty -Path $OriginalPSPathOptimized -Name $($FixParameter.ParamName) -Value $NewValue -ErrorAction Stop
+                                    $DisplayName = ''
+                                    $keyTmp = (Get-ItemProperty -Path $OriginalPSPathOptimized)
+                                    If ($soft_service -match 'Software') {
+                                        $DisplayName = $keyTmp.DisplayName
+                                    }
+                                    If ($keyTmp.$($FixParameter.ParamName) -eq $NewValue) {
+                                        Write-Debug "$(get-date -format u)  :  SUCCESS  : Path value was changed for $soft_service '$($OriginalPath.PSChildName)' $(if($DisplayName){"($DisplayName)"})"
+                                    }
+                                    Else {
+                                        Write-Debug "$(get-date -format u)  :  ERROR  : Something is going wrong. Path was not changed for $soft_service '$(if($DisplayName){$DisplayName}else{$OriginalPath.PSChildName})'."
+                                    }
+                                }
+                            }
+                            Catch {
+                                Write-Debug "$(get-date -format u)  :  ERROR  : Something is going wrong. Value changing failed in service '$($OriginalPath.PSChildName)'."
+                                Write-Debug "$(get-date -format u)  :  ERROR  : $_"
+                            }
+                            Clear-Variable NewValue
+                        }
+                    }
+                }
+            }
+            If (($trigger | Measure-Object).count -ge 1) {
+                Write-Debug "$(get-date -format u)  :  ERROR  : Can't parse  $($OriginalPath.$($FixParameter.ParamName)) in registry  $($OriginalPath.PSPath -replace 'Microsoft\.PowerShell\.Core\\Registry\:\:') "
+            }
         }
-        Set-ItemProperty -path $data[$i] -name $data[$i+1] -value $data[$i+3] -type $data[$i+2]  -Force | Out-Null
     }
     exit 0
 }

@@ -1,12 +1,8 @@
-# Enable Credential Guard
+# Fix Unquoted Service Path Issues
 ## Pre-Requisites
 There are no pre-requisites for this PR set.
 
-## Instructions
-Modify both the detection and remediation scripts to set the appropriate registry values. Defaults are shown below.
+## IMPORTANT
+This PR set is a fork of https://github.com/VectorBCO/windows-path-enumerate
 
-| Registry Key                                          | Registry Value                    | Type  | Script Default    |
-| ---                                                   | ---                               | ---   | ---               |
-| HKLM:\\SYSTEM\CurrentControlSet\Control\DeviceGuard   | EnableVirtualizationBasedSecurity | DWord | 1                 |
-| HKLM:\\SYSTEM\CurrentControlSet\Control\DeviceGuard   | RequirePlatformSecurityFeatures   | DWord | 1                 |
-| HKLM:\\SYSTEM\CurrentControlSet\Control\Lsa           | LsaCfgFlags                       | DWord | 1                 |
+Our version simply breaks down their original script such that it works as a PR set.
