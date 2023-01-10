@@ -42,8 +42,8 @@ Instructions for use and any necessary prerequisities are listed within each scr
 | Type | Scripts | Description |
 | --- | --- | --- |
 | Security/Applications | [Adobe Acrobat Reader] | Configures security settings for Adobe Acrobat Reader. |
-| Security/Applications | [Fix Unquoted Service Path Issues] | Remediates service paths in the registry that are not secured with qoutation marks. |
 | Security/System | [Enable Credential Guard] | Enables Credential Guard on non-Enterprise PCs (i.e. Business Premium licenced). |
+| Security/System | [Fix Unquoted Service Path Issues] | Remediates service paths in the registry that are not secured with qoutation marks. |
 | Security/System | [Intune Policy Gap-Filler] | Sets various keys required by Microsoft Defender, that aren't available via Intune configuration profiles. |
 
 [Adobe Acrobat Reader]: https://github.com/ALARP-Solutions/EndpointScripts/tree/main/Proactive%20Remediation%20Script%20Sets/Security/Applications/Adobe%20Acrobat%20Reader
