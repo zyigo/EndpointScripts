@@ -44,14 +44,17 @@ Instructions for use and any necessary prerequisities are listed within each scr
 ## [Proactive Remediation Sets](https://github.com/ALARP-Solutions/EndpointScripts/tree/main/Proactive%20Remediation%20Script%20Sets)
 | Type | Scripts | Description |
 | --- | --- | --- |
+| [Basic Functions] | [Enable Automatic Timezone] | Enables the Automatic Timezone service, so that the device can auto-configure as expected. |
 | [Security/Applications] | [Adobe Acrobat Reader] | Configures security settings for Adobe Acrobat Reader. |
 | [Security/System] | [Enable Credential Guard] | Enables Credential Guard on non-Enterprise PCs (i.e. Business Premium licenced). |
-| [Security/System] | [Fix Unquoted Service Path Issues] | Remediates service paths in the registry that are not secured with qoutation marks. |
+| [Security/System] | [Fix Unquoted Service Path Issues] | Remediates service paths in the registry that are not secured with quotation marks. |
 | [Security/System] | [Intune Policy Gap-Filler] | Sets various keys required by Microsoft Defender, that aren't available via Intune configuration profiles. |
 
-
+[Basic Functions]: https://github.com/ALARP-Solutions/EndpointScripts/tree/main/Proactive%20Remediation%20Script%20Sets/Basic%20Functions
 [Security/Applications]: https://github.com/ALARP-Solutions/EndpointScripts/tree/main/Proactive%20Remediation%20Script%20Sets/Security/Applications
 [Security/System]: https://github.com/ALARP-Solutions/EndpointScripts/tree/main/Proactive%20Remediation%20Script%20Sets/Security/System
+
+[Enable Automatic Timezone]: https://github.com/ALARP-Solutions/EndpointScripts/tree/main/Proactive%20Remediation%20Script%20Sets/Basic%20Functions/Enable%20Automatic%20Timezones
 [Adobe Acrobat Reader]: https://github.com/ALARP-Solutions/EndpointScripts/tree/main/Proactive%20Remediation%20Script%20Sets/Security/Applications/Adobe%20Acrobat%20Reader
 [Fix Unquoted Service Path Issues]: https://github.com/ALARP-Solutions/EndpointScripts/tree/main/Proactive%20Remediation%20Script%20Sets/Security/System/Fix%20Unquoted%20Service%20Path%20Issues
 [Enable Credential Guard]:https://github.com/ALARP-Solutions/EndpointScripts/tree/main/Proactive%20Remediation%20Script%20Sets/Security/System/Enable%20Credential%20Guard
@@ -63,7 +66,8 @@ Distributed under the MIT License. See [`LICENSE.md`](https://github.com/ALARP-S
 ## Acknowledgments
 - Project icon designed by [Freepik](https://www.flaticon.com/authors/freepik) from [Flaticon](https://www.flaticon.com/free-icons/programming)
 - [Proactive Remediation Script Sets/Security/System/Fix Unquoted Service Path Issues](https://github.com/ALARP-Solutions/EndpointScripts/tree/main/Proactive%20Remediation%20Script%20Sets/Security/System/Fix%20Unquoted%20Service%20Path%20Issues) is a fork of a script originally authored by various contributors. Original repo available [here](https://github.com/VectorBCO/windows-path-enumerate).
-- [Stand-Alone Scripts/Provisioning/Remove Built-In Apps.ps1](https://github.com/ALARP-Solutions/EndpointScripts/blob/main/Stand-Alone%20Scripts/Provisioning/Remove%20Built-In%20Apps.ps1) is a fork of a script originally authored by _Joymalya Basu Roy_ and _Wojciech Maciejewski_
+- [Stand-Alone Scripts/Provisioning/Remove Built-In Apps.ps1](https://github.com/ALARP-Solutions/EndpointScripts/blob/main/Stand-Alone%20Scripts/Provisioning/Remove%20Built-In%20Apps.ps1) is a fork of a script originally authored by _Joymalya Basu Roy_ and _Wojciech Maciejewski_.
+- [Proactive Remediation Script Sets/Basic Functions/Enable Automatic Timezones](https://github.com/ALARP-Solutions/EndpointScripts/tree/main/Proactive%20Remediation%20Script%20Sets/Basic%20Functions/Enable%20Automatic%20Timezones) is fork of a script developed by [IntuneTraining](https://github.com/IntuneTraining). Original repo available [here](https://github.com/IntuneTraining/TimezoneTurnOn).
 
 </br>
 

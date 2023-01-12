@@ -1,6 +1,5 @@
 #Requires -RunAsAdministrator
 
-
 # SETUP
 "--------------- SETTING UP ---------------"
 $testparams = @{
