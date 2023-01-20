@@ -44,17 +44,19 @@ Instructions for use and any necessary prerequisities are listed within each scr
 ## [Proactive Remediation Sets](https://github.com/ALARP-Solutions/EndpointScripts/tree/main/Proactive%20Remediation%20Script%20Sets)
 | Type | Scripts | Description |
 | --- | --- | --- |
-| [Basic Functions] | [Enable Automatic Timezone] | Enables the Automatic Timezone service, so that the device can auto-configure as expected. |
+| [Provisioning] | [Enable Automatic Timezone] | Enables the Automatic Timezone service, so that the device can auto-configure as expected. |
+| [Provisioning] | [Remove Built-In Microsoft Teams]| Removes the Personal-Only Microsoft Teams installed by default in Windows 11. |
 | [Security/Applications] | [Adobe Acrobat Reader] | Configures security settings for Adobe Acrobat Reader. |
 | [Security/System] | [Enable Credential Guard] | Enables Credential Guard on non-Enterprise PCs (i.e. Business Premium licenced). |
 | [Security/System] | [Fix Unquoted Service Path Issues] | Remediates service paths in the registry that are not secured with quotation marks. |
 | [Security/System] | [Intune Policy Gap-Filler] | Sets various keys required by Microsoft Defender, that aren't available via Intune configuration profiles. |
 
-[Basic Functions]: https://github.com/ALARP-Solutions/EndpointScripts/tree/main/Proactive%20Remediation%20Script%20Sets/Basic%20Functions
+[Provisioning]: https://github.com/ALARP-Solutions/EndpointScripts/tree/main/Proactive%20Remediation%20Script%20Sets/Provisioning
 [Security/Applications]: https://github.com/ALARP-Solutions/EndpointScripts/tree/main/Proactive%20Remediation%20Script%20Sets/Security/Applications
 [Security/System]: https://github.com/ALARP-Solutions/EndpointScripts/tree/main/Proactive%20Remediation%20Script%20Sets/Security/System
 
-[Enable Automatic Timezone]: https://github.com/ALARP-Solutions/EndpointScripts/tree/main/Proactive%20Remediation%20Script%20Sets/Basic%20Functions/Enable%20Automatic%20Timezones
+[Enable Automatic Timezone]: https://github.com/ALARP-Solutions/EndpointScripts/tree/main/Proactive%20Remediation%20Script%20Sets/Provisioning/Enable%20Automatic%20Timezones
+[Remove Built-In Microsoft Teams]: https://github.com/ALARP-Solutions/EndpointScripts/tree/main/Proactive%20Remediation%20Script%20Sets/Provisioning/Remove%20Built-In%20Microsoft%20Teams
 [Adobe Acrobat Reader]: https://github.com/ALARP-Solutions/EndpointScripts/tree/main/Proactive%20Remediation%20Script%20Sets/Security/Applications/Adobe%20Acrobat%20Reader
 [Fix Unquoted Service Path Issues]: https://github.com/ALARP-Solutions/EndpointScripts/tree/main/Proactive%20Remediation%20Script%20Sets/Security/System/Fix%20Unquoted%20Service%20Path%20Issues
 [Enable Credential Guard]:https://github.com/ALARP-Solutions/EndpointScripts/tree/main/Proactive%20Remediation%20Script%20Sets/Security/System/Enable%20Credential%20Guard
