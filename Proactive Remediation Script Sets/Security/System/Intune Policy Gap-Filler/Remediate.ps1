@@ -13,7 +13,7 @@ $data = @(
     "HKLM:\\SOFTWARE\Policies\Microsoft Services\AdmPwd",                                               "AdmPwdEnabled",                "DWord",    "1",
     "HKLM:\\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity",    "Enabled",                      "DWord",    "1",       
     "HKLM:\\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity",    "Locked",                       "DWord",    "1",   
-    "HKLM:\\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity",    "HVCIMATRequired",              "DWord",    "0",
+    "HKLM:\\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity",    "HVCIMATRequired",              "DWord",    "0"
 )
 
 try {
