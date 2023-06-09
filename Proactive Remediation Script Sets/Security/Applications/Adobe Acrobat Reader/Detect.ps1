@@ -62,6 +62,7 @@ $data = @(
     "HKLM:\\SOFTWARE\Policies\Adobe\Adobe Acrobat\DC\FeatureLockDown",                          "bToggleSophiaWebInfra",                        "DWord",    "0", 
     "HKLM:\\SOFTWARE\Policies\Adobe\Adobe Acrobat\DC\FeatureLockDown",                          "bLimitPromptsFeatureKey",                      "DWord",    "1", 
     "HKLM:\\SOFTWARE\Policies\Adobe\Adobe Acrobat\DC\FeatureLockDown",                          "bEnablePersistentButton",                      "DWord",    "0", 
+    "HKLM:\\SOFTWARE\Policies\Adobe\Adobe Acrobat\DC\FeatureLockDown",                          "bDisableJavaScript",                           "DWord",    "1", 
    #"HKLM:\\SOFTWARE\Policies\Adobe\Adobe Acrobat\DC\FeatureLockDown\cTrustedFolders",          "t1",                                           "String",   "TBA: A PATH",
    #"HKLM:\\SOFTWARE\Policies\Adobe\Adobe Acrobat\DC\FeatureLockDowncDefaultLaunchURLPerms",    "iUnknownURLPerms",                             "DWord",    "3",
     "HKLM:\\SOFTWARE\Policies\Adobe\Adobe Acrobat\DC\FeatureLockDown\cSharePoint",              "bDisableSharePointFeatures",                   "DWord",    "1",
