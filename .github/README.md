@@ -87,5 +87,5 @@ Distributed under the MIT License. See [`LICENSE.md`](https://github.com/ALARP-S
 [issues-shield]: https://img.shields.io/github/issues/ALARP-Solutions/EndpointScripts.svg?style=for-the-badge
 [issues-url]: https://github.com/ALARP-Solutions/EndpointScripts/issues
 [license-shield]: https://img.shields.io/github/license/ALARP-Solutions/EndpointScripts.svg?style=for-the-badge
-[license-url]: https://github.com/ALARP-Solutions/EndpointScripts/blob/master/LICENSE.txt
+[license-url]: https://github.com/ALARP-Solutions/EndpointScripts/blob/master/LICENSE.md
 [size-shield]: https://img.shields.io/github/repo-size/alarp-solutions/EndpointScripts
