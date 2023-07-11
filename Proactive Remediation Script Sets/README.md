@@ -3,6 +3,7 @@
 - [Provisioning](https://github.com/ALARP-Solutions/EndpointScripts/tree/main/Proactive%20Remediation%20Script%20Sets/Provisioning)
     - [Enable Automatic Timezones](https://github.com/ALARP-Solutions/EndpointScripts/tree/main/Proactive%20Remediation%20Script%20Sets/Provisioning/Enable%20Automatic%20Timezones)
     - [Remove Built-In Microsoft Teams](https://github.com/ALARP-Solutions/EndpointScripts/tree/main/Proactive%20Remediation%20Script%20Sets/Provisioning/Remove%20Built-In%20Microsoft%20Teams)
+    - [Remove Printers](https://github.com/ALARP-Solutions/EndpointScripts/tree/main/Proactive%20Remediation%20Script%20Sets/Provisioning/Remove%20Printers)
 - [Security](https://github.com/ALARP-Solutions/EndpointScripts/tree/main/Proactive%20Remediation%20Script%20Sets/Security)
     - [Applications](https://github.com/ALARP-Solutions/EndpointScripts/tree/main/Proactive%20Remediation%20Script%20Sets/Security/Applications)
         - [Adobe Acrobat Reader](https://github.com/ALARP-Solutions/EndpointScripts/tree/main/Proactive%20Remediation%20Script%20Sets/Security/Applications/Adobe%20Acrobat%20Reader)

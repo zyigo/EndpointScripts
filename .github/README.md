@@ -45,6 +45,7 @@ Instructions for use and any necessary prerequisities are listed within each scr
 | --- | --- | --- |
 | [Provisioning] | [Enable Automatic Timezone] | Enables the Automatic Timezone service, so that the device can auto-configure as expected. |
 | [Provisioning] | [Remove Built-In Microsoft Teams]| Removes the Personal-Only Microsoft Teams installed by default in Windows 11. |
+| [Provisioning] | [Remove Printers]| Removes specific, existing printers from a device. |
 | [Security/Applications] | [Adobe Acrobat Reader] | Configures security settings for Adobe Acrobat Reader. |
 | [Security/Applications] | [Uninstall Local Google Chrome] | Removes Google Chrome if it is installed locally by the user. |
 | [Security/System] | [Enable Credential Guard] | Enables Credential Guard on non-Enterprise PCs (i.e. Business Premium licenced). |
@@ -57,6 +58,7 @@ Instructions for use and any necessary prerequisities are listed within each scr
 
 [Enable Automatic Timezone]: https://github.com/ALARP-Solutions/EndpointScripts/tree/main/Proactive%20Remediation%20Script%20Sets/Provisioning/Enable%20Automatic%20Timezones
 [Remove Built-In Microsoft Teams]: https://github.com/ALARP-Solutions/EndpointScripts/tree/main/Proactive%20Remediation%20Script%20Sets/Provisioning/Remove%20Built-In%20Microsoft%20Teams
+[Remove Printers]: https://github.com/ALARP-Solutions/EndpointScripts/tree/main/Proactive%20Remediation%20Script%20Sets/Provisioning/Remove%20Printers
 [Adobe Acrobat Reader]: https://github.com/ALARP-Solutions/EndpointScripts/tree/main/Proactive%20Remediation%20Script%20Sets/Security/Applications/Adobe%20Acrobat%20Reader
 [Uninstall Local Google Chrome]: https://github.com/ALARP-Solutions/EndpointScripts/tree/main/Proactive%20Remediation%20Script%20Sets/Security/Applications/Uninstall%20Local%20Google%20Chrome
 [Fix Unquoted Service Path Issues]: https://github.com/ALARP-Solutions/EndpointScripts/tree/main/Proactive%20Remediation%20Script%20Sets/Security/System/Fix%20Unquoted%20Service%20Path%20Issues
