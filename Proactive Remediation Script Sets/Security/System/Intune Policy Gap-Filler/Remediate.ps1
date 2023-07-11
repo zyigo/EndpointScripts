@@ -1,7 +1,5 @@
 # Developed IAW https://www.anoopcnair.com/4-methods-to-enable-credential-guard-on-windows/
 
-
-
 # Configure Data
 $data = @(
     "HKLM:\\SYSTEM\CurrentControlSet\Control\Lsa",                                                      "disabledomaincreds",           "DWord",    "1",       
