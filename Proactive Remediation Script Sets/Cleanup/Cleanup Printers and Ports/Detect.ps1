@@ -1,4 +1,23 @@
-  try {
+<#
+        .SYNOPSIS
+        Detects old printers and printer ports.
+
+        .DESCRIPTION
+        Detects old printers and printer ports.
+        Proactive Remediation Set - Detection Scripte (Microsoft Endpoint Manager).
+
+        .INPUTS
+        None. This file should be modified before being uploaded to Microsoft Endpoint Manager.
+
+        .OUTPUTS
+        Exit Code 0. Remediation Not Required.
+        Exit Code 1. Remediation Required.
+
+        .LINK
+        https://github.com/ALARP-Solutions/EndpointScripts/tree/main/Proactive%20Remediation%20Script%20Sets/Cleanup/Cleanup%20Printers%20and%20Ports
+    #>
+  
+try {
     # Modify/extend this list to remove a printer.
     $printers = @(
         "Brother MFC-J6930DW",
