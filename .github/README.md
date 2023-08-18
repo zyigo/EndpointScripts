@@ -36,6 +36,7 @@ Instructions for use and any necessary prerequisities are listed within each scr
 ## [Stand-Alone Scripts](https://github.com/ALARP-Solutions/EndpointScripts/tree/main/Stand-Alone%20Scripts)
 | Type | Scripts | Description |
 | --- | --- | --- |
+| [Provisioning](https://github.com/ALARP-Solutions/EndpointScripts/tree/main/Stand-Alone%20Scripts/Provisioning) | [Enhance Intune Agent Logging](https://github.com/ALARP-Solutions/EndpointScripts/tree/main/Stand-Alone%20Scripts/Provisioning/Enhance%20Intune%20Agent%20Logging.ps1) | The script extends the Intune Management Extension (IME) log behavior. |
 | [Provisioning](https://github.com/ALARP-Solutions/EndpointScripts/tree/main/Stand-Alone%20Scripts/Provisioning) | [Remove Built-In Apps] | Removes unnecessary built-in windows app during device provisioning. |
 
 [Remove Built-In Apps]: https://github.com/ALARP-Solutions/EndpointScripts/tree/main/Stand-Alone%20Scripts/Provisioning/Remove%20Built-In%20Apps.ps1
@@ -74,6 +75,7 @@ Distributed under the MIT License. See [`LICENSE.md`](https://github.com/ALARP-S
 - [PRSS/Security/System/Fix Unquoted Service Path Issues](https://github.com/ALARP-Solutions/EndpointScripts/tree/main/Proactive%20Remediation%20Script%20Sets/Security/System/Fix%20Unquoted%20Service%20Path%20Issues) is a fork of a repo developed by various contributors. Original repo available [here](https://github.com/VectorBCO/windows-path-enumerate).
 - [PRSS/Provisioning/Enable Automatic Timezones](https://github.com/ALARP-Solutions/EndpointScripts/tree/main/Proactive%20Remediation%20Script%20Sets/Provisioning/Enable%20Automatic%20Timezones) is a fork of a script developed by [IntuneTraining](https://github.com/IntuneTraining). Original repo available [here](https://github.com/IntuneTraining/TimezoneTurnOn).
 - [PRSS/Security/Applications/Uninstall Local Google Chrome](https://github.com/ALARP-Solutions/EndpointScripts/tree/main/Proactive%20Remediation%20Script%20Sets/Security/Applications/Uninstall%20Local%20Google%20Chrome) is a fork of a gist developed by [Snaver](https://gist.github.com/Snaver). Original gist available [here](https://gist.github.com/Snaver/39bdd480ee83a6d6fff71c7120136728).
+- [SAS/Provisioning/Enhance Intune Agent Logging.ps1](https://github.com/ALARP-Solutions/EndpointScripts/blob/main/Stand-Alone%20Scripts/Provisioning/Enhance%20Intune%20Agent%20Logging.ps1) is a fork of a [script](https://github.com/okieselbach/Intune/blob/master/EnhanceIntuneAgentLogging.ps1) originally authored by [Oliver Kieselbach](https://github.com/okieselbach) of [oliverkieselbach.com](oliverkieselbach.com).
 - [SAS/Provisioning/Remove Built-In Apps.ps1](https://github.com/ALARP-Solutions/EndpointScripts/blob/main/Stand-Alone%20Scripts/Provisioning/Remove%20Built-In%20Apps.ps1) is a fork of a script originally authored by _Joymalya Basu Roy_ and _Wojciech Maciejewski_.
 
 </br>
