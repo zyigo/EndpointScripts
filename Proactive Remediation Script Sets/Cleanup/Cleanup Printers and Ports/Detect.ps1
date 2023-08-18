@@ -36,7 +36,7 @@ try {
     
     $remediate = @()
     $remediate += Get-Printer -Name $printers[0..$printers.Length] -ErrorAction SilentlyContinue
-    $remediate += Get-PrinterPort -Name $printers[0..$ports.Length] -ErrorAction SilentlyContinue
+    $remediate += Get-PrinterPort -Name $ports[0..$ports.Length] -ErrorAction SilentlyContinue
 
     if ($remediate.Count -gt 0) {
         Write-Output "Remediation required."
