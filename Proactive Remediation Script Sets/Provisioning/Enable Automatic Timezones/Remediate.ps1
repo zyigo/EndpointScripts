@@ -2,7 +2,7 @@
 
 #region Settings
 $ServiceName = 'tzautoupdate'
-$Action = 'Manual'
+$Action = 'Auto'
 #endregion
 
 #region Functions
