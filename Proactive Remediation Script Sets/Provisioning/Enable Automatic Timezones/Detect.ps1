@@ -1,9 +1,15 @@
 $ServiceName = 'tzautoupdate'
-$Action = 'Manual'
+$Action = 'Auto'
+$Status = 'Running'
 $Service = Get-Service -Name $ServiceName -ErrorAction SilentlyContinue
 
 try {
-    If ($service.StartType -eq $Action) {
+
+    $result1 = $service.StartType -eq $Action
+    $result2 = $service.Status -eq $Status
+    $result = $result1 -Or $result2
+    
+    If ($result) {
         Write-Host "$ServiceName is already configured correctly."
         exit 0
     }
