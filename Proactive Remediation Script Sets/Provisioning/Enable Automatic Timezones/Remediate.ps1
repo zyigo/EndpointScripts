@@ -40,7 +40,7 @@ Function Repair-TimezoneServices {
 
 #region Process
 try {
-    Write-Host "Repairing the Automatic Timezone service startup type to MANUAL."
+    Write-Host "Repairing the Automatic Timezone service startup type to $Action."
     Repair-TimezoneServices -ServiceName $ServiceName -Action $Action
     Exit 0
 }
